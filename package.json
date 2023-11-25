@@ -1,0 +1,22 @@
+{
+  "name": "prachsprosty-prach",
+  "version": "0.1.0",
+  "description": "Série logických programovacích úloh na DVOP Webový backend na SSPŠ pro školní rok 2023/2024",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frvojacek/Prachsprosty-prach.git"
+  },
+  "author": "František Vojáček",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/frvojacek/Prachsprosty-prach/issues"
+  },
+  "homepage": "https://github.com/frvojacek/Prachsprosty-prach#readme"
+}
