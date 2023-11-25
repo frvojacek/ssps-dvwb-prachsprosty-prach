@@ -24,7 +24,13 @@ function printMap() {
 }
 
 function subtractDust() {
-  
+  map.forEach((row, rowIndex) => {
+    row.forEach((field, fieldIndex) => {
+      if(field > 0) {
+        map[rowIndex][fieldIndex]--
+      }
+    })
+  })
 }
 
 function addDust() {
