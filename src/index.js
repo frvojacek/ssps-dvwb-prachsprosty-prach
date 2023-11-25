@@ -9,8 +9,22 @@ const sizeY = input[2]
 // Two dimensional map of dust
 let map = input.slice(5).split(/\r?\n/, sizeY).map((row) => row.split(''))
 
-function subtractDust() {
+while(map.flat().some((field) => field > 0))
+{
+  subtractDust()
+  addDust()
+  printMap()
+}
 
+function printMap() {
+  map.forEach((row) => {
+    console.log(row.join(''))
+  })
+  console.log()
+}
+
+function subtractDust() {
+  
 }
 
 function addDust() {
