@@ -3,11 +3,12 @@ const path = require('path');
 const testPath = path.join(__dirname, '..', 'tests', 'test1.in');
 const input = fs.readFileSync(testPath).toString();
 
-const sizeX = input[0]
-const sizeY = input[2]
+let rows = input.split(/\r?\n/)
+let sizeX = Number(rows[0][0])
+let sizeY = Number(rows[0][2])
+let amount = Number(rows[sizeX + 1][0])
 
-// Two dimensional map of dust
-let map = input.slice(5).split(/\r?\n/, sizeY).map((row) => row.split(''))
+let map = rows.slice(1, sizeY + 1).map((row) => row.split(''))
 
 while(map.flat().some((field) => field > 0))
 {
