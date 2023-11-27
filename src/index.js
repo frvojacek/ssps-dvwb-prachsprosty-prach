@@ -12,19 +12,19 @@ let map = rows.slice(1, sizeY + 1).map((row) => row.split('').map(Number))
 let additionInstructions = rows.slice(sizeY + 2, sizeY + amount + 2).map((row) => row.split(' ').map(Number))
 additionInstructions.sort((a, b) => a[0] - b[0])
 
-let iteration = 0
-while (map.flat().some((field) => field > 0) || additionInstructions.length) {
+let iteration
+for (iteration = 0; map.flat().some((field) => field > 0) || additionInstructions.length; iteration++) {
   subtractDust()
   addDust()
   printMap()
-  iteration++
+  if (map.flat().some((field) => field > 0) || additionInstructions.length)
+    console.log()
 }
 
 function printMap() {
   map.forEach((row) => {
     console.log(row.join(''))
   })
-  console.log()
 }
 
 function subtractDust() {
