@@ -1,12 +1,12 @@
 const fs = require('fs');
 const path = require('path');
-const testPath = path.join(__dirname, '..', 'tests', 'test4.in');
+const testPath = path.join(__dirname, '..', 'tests', 'test5.in');
 const input = fs.readFileSync(testPath).toString();
 
 let rows = input.split(/\r?\n/)
-let sizeX = Number(rows[0][0])
-let sizeY = Number(rows[0][2])
-let amount = Number(rows[sizeY + 1][0])
+let size = rows[0].split(' ')
+let sizeX = Number(size[0]), sizeY = Number(size[1])
+let amount = Number(rows[sizeY + 1])
 
 let map = rows.slice(1, sizeY + 1).map((row) => row.split('').map(Number))
 let additionInstructions = rows.slice(sizeY + 2, sizeY + amount + 2).map((row) => row.split(' ').map(Number))
