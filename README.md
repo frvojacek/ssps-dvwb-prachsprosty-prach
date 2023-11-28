@@ -10,10 +10,10 @@ Celé zadání je možné najít v [docs/1. instructions.pdf](docs/1.%20instruct
 
 | Test                              | Hodnocení | Základ	|
 | -:								| :-:		| :-:		|
-| Mapa bez přidání					| 0 %		| 20 %		|
-| Prázdná mapa s jedním přidáním	| 0 %		| 20 %		|
-| Mapa s přidáním bez kolizí		| 0 %		| 10 %		|
-| Mapa s přidáním s kolizemi		| 0 %		| 20 %		|
-| Pokročilé příklady				| 0 %		| 10 %		|
-| Náhodné příklady					| 0 %		| 20 %		|
-| **Výsledek**						| **0 %**	| **100 %** |
+| Mapa bez přidání					| 15 %		| 20 %		|
+| Prázdná mapa s jedním přidáním	| 20 %		| 20 %		|
+| Mapa s přidáním bez kolizí		| 10 %		| 10 %		|
+| Mapa s přidáním s kolizemi		| 20 %		| 20 %		|
+| Pokročilé příklady				| 10 %		| 10 %		|
+| Náhodné příklady					| 20 %		| 20 %		|
+| **Výsledek**						| **95 %**	| **100 %** |
